@@ -46,7 +46,7 @@ public class Asm02 {
 
             try {
                 // Nhập lựa chọn của người dùng
-                System.out.print("Chuc nang: ");
+                System.out.print("Function: ");
                 choice = scanner.nextInt();
                 scanner.nextLine(); // Đọc bỏ dòng trống
 
@@ -54,7 +54,7 @@ public class Asm02 {
                 processChoice(choice);
             } catch (InputMismatchException e) {
                 // Xử lý ngoại lệ InputMismatchException
-                System.out.println("Lựa chọn không hợp lệ. Vui lòng nhập lại.");
+                System.out.println("Invalid selection. Please try again.");
                 scanner.nextLine(); // Đọc bỏ dòng trống
                 choice = -1; // Đặt choice thành giá trị không hợp lệ để tiếp tục vòng lặp
             }
@@ -66,7 +66,7 @@ public class Asm02 {
      */
     private static void displayHeader() {
         System.out.println("+----------+-------------------------+----------+");
-        System.out.println("| NGAN HANG SO | " + Bank.AUTHOR + "@" + Bank.VERSION + "                 |");
+        System.out.println("| DIGITAL BANK | " + Bank.AUTHOR + "@" + Bank.VERSION + "                 |");
         System.out.println("+----------+-------------------------+----------+");
     }
 
@@ -74,12 +74,12 @@ public class Asm02 {
      * Phương thức displayMenu hiển thị menu chức năng cho người dùng.
      */
     private static void displayMenu() {
-        System.out.println("  1. Them khach hang");
-        System.out.println("  2. Them tai khoan cho khach hang");
-        System.out.println("  3. Hien thi danh sach khach hang");
-        System.out.println("  4. Tim theo CCCD");
-        System.out.println("  5. Tim theo ten khach hang");
-        System.out.println("  0. Thoat");
+        System.out.println("  1. Add customer");
+        System.out.println("  2. Add account for customer");
+        System.out.println("  3. Display customer list");
+        System.out.println("  4. Search by ID number");
+        System.out.println("  5. Search by customer name");
+        System.out.println("  0. Exit");
         System.out.println("+----------+-------------------------+----------+");
     }
 

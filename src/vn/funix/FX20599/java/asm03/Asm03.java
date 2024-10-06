@@ -55,16 +55,16 @@ public class Asm03 {
 
     private static void showMenu() {
         System.out.println("+----------+-------------------------+----------+");
-        System.out.println("| NGAN HANG SO | FX20599@v3.0.0                 |");
+        System.out.println("| DIGITAL BANK | FX20599@v3.0.0                 |");
         System.out.println("+----------+-------------------------+----------+");
-        System.out.println("  1. Xem Thong tin khach hang");
-        System.out.println("  2. Them tai khoan ATM");
-        System.out.println("  3. Them tai khoan tin dung");
-        System.out.println("  4. Rut tien");
-        System.out.println("  5. Lich su giao dich");
-        System.out.println("  0. Thoat");
+        System.out.println("  1. View customer information");
+        System.out.println("  2. Add ATM account");
+        System.out.println("  3. Add credit account");
+        System.out.println("  4. Withdraw money");
+        System.out.println("  5. Transaction history");
+        System.out.println("  0. Exit");
         System.out.println("+----------+-------------------------+----------+");
-        System.out.print("Chuc nang: ");
+        System.out.print("Function: ");
     }
 
     private static int getUserChoice() {
@@ -145,7 +145,6 @@ public class Asm03 {
 
         System.out.println("Tai khoan tin dung da duoc them cho khach hang.");
     }
-
 
 
     private static void withdraw() {
